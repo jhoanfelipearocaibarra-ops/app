@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia Social Media - FitMind Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Hero -->
+    <header class="gradient-bg text-white py-20 px-6 text-center shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-bold mb-4 animate-bounce">FitMind Studio</h1>
+            <p class="text-xl mb-8 opacity-90">Estrategia Integral de Social Media Marketing</p>
+            <div class="bg-white/20 inline-block px-6 py-3 rounded-full backdrop-blur-md">
+                <p class="font-semibold">Estudiante: Joan Felipe Aroca Ibarra | Matrícula: 5200920</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <ul class="flex justify-center space-x-8 font-medium overflow-x-auto">
+                <li><a href="#objetivo" class="hover:text-indigo-600 transition">Objetivo</a></li>
+                <li><a href="#producto" class="hover:text-indigo-600 transition">Producto</a></li>
+                <li><a href="#redes" class="hover:text-indigo-600 transition">Redes Sociales</a></li>
+                <li><a href="#contenido" class="hover:text-indigo-600 transition">Contenido</a></li>
+                <li><a href="#gestion" class="hover:text-indigo-600 transition">Gestión</a></li>
+                <li><a href="#metricas" class="hover:text-indigo-600 transition">Métricas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- 1. Objetivo -->
+        <section id="objetivo" class="mb-20 scroll-mt-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-indigo-700 flex items-center">
+                        <i class="fas fa-bullseye mr-3"></i> Objetivo de la Estrategia
+                    </h2>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        Fortalecer la <strong>presencia digital</strong> y la <strong>reputación de marca</strong> de FitMind Studio como plataforma líder de bienestar en Colombia. Buscamos incrementar el reconocimiento de marca, fidelizar a la comunidad y potenciar la competitividad mediante contenido de alto valor.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="images/wellness.jpg" alt="Bienestar" class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Producto o Servicio -->
+        <section id="producto" class="mb-20 bg-white p-8 rounded-3xl shadow-sm border border-gray-100 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8 text-indigo-700 text-center">Nuestro Producto Integral</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 card rounded-xl bg-indigo-50">
+                    <i class="fas fa-dumbbell text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Entrenamiento Físico</h3>
+                    <p class="text-gray-600">Rutinas personalizadas adaptadas a cada nivel y objetivo.</p>
+                </div>
+                <div class="text-center p-6 card rounded-xl bg-indigo-50">
+                    <i class="fas fa-brain text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Salud Mental</h3>
+                    <p class="text-gray-600">Sesiones de meditación y mindfulness para el equilibrio emocional.</p>
+                </div>
+                <div class="text-center p-6 card rounded-xl bg-indigo-50">
+                    <i class="fas fa-apple-alt text-4xl text-indigo-500 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Nutrición & App</h3>
+                    <p class="text-gray-600">Planes alimenticios y seguimiento digital del progreso.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Selección de Redes Sociales -->
+        <section id="redes" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-10 text-indigo-700">Selección Estratégica de Plataformas</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-pink-500 to-purple-600 p-8 rounded-2xl text-white card">
+                    <i class="fab fa-instagram text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Instagram</h3>
+                    <p class="mb-4">Ideal para el impacto visual, reels dinámicos y testimonios en historias.</p>
+                    <span class="bg-white/20 px-3 py-1 rounded text-sm">Audiencia: 18-35 años</span>
+                </div>
+                <div class="bg-black p-8 rounded-2xl text-white card">
+                    <i class="fab fa-tiktok text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">TikTok</h3>
+                    <p class="mb-4">Plataforma clave para videos cortos virales y retos de fitness (Challenges).</p>
+                    <span class="bg-white/20 px-3 py-1 rounded text-sm">Audiencia: Generación Z</span>
+                </div>
+                <div class="bg-blue-600 p-8 rounded-2xl text-white card">
+                    <i class="fab fa-facebook text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Facebook</h3>
+                    <p class="mb-4">Gestión de comunidades, grupos de apoyo y atención al cliente directa.</p>
+                    <span class="bg-white/20 px-3 py-1 rounded text-sm">Audiencia: 30+ años</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Estrategia de Contenido (Calendario Interactivo) -->
+        <section id="contenido" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8 text-indigo-700">Calendario de Contenido Semanal</h2>
+            <div class="overflow-x-auto shadow-xl rounded-xl">
+                <table class="w-full text-left bg-white">
+                    <thead class="bg-indigo-600 text-white">
+                        <tr>
+                            <th class="p-4">Día</th>
+                            <th class="p-4">Tipo de Contenido</th>
+                            <th class="p-4">Formato</th>
+                            <th class="p-4">Plataforma</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-indigo-50">
+                            <td class="p-4 font-bold">Lunes</td>
+                            <td class="p-4">Rutina de ejercicio</td>
+                            <td class="p-4"><span class="bg-red-100 text-red-700 px-2 py-1 rounded">Video corto</span></td>
+                            <td class="p-4">TikTok / Instagram</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-50">
+                            <td class="p-4 font-bold">Martes</td>
+                            <td class="p-4">Consejo nutricional</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-700 px-2 py-1 rounded">Carrusel</span></td>
+                            <td class="p-4">Instagram / Facebook</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-50">
+                            <td class="p-4 font-bold">Miércoles</td>
+                            <td class="p-4">Tips motivacionales</td>
+                            <td class="p-4"><span class="bg-green-100 text-green-700 px-2 py-1 rounded">Imagen + Texto</span></td>
+                            <td class="p-4">Instagram</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-50">
+                            <td class="p-4 font-bold">Jueves</td>
+                            <td class="p-4">Entrenamiento en vivo</td>
+                            <td class="p-4"><span class="bg-purple-100 text-purple-700 px-2 py-1 rounded">Live Stream</span></td>
+                            <td class="p-4">Facebook / Instagram</td>
+                        </tr>
+                        <tr class="hover:bg-indigo-50">
+                            <td class="p-4 font-bold">Viernes</td>
+                            <td class="p-4">Testimonio de usuario</td>
+                            <td class="p-4"><span class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Video</span></td>
+                            <td class="p-4">TikTok / Instagram</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 5 & 6. Gestión de Comunidades y Reputación -->
+        <section id="gestion" class="mb-20 scroll-mt-24">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-indigo-500">
+                    <h3 class="text-2xl font-bold mb-6 text-indigo-700">Gestión de Comunidades</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Respuesta inmediata a consultas (Inbox/DM).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Moderación activa de comentarios ofensivos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <span>Uso de <strong>Hootsuite</strong> y <strong>Meta Business Suite</strong>.</span>
+                        </li>
+                    </ul>
+                    <img src="images/hootsuite.jpg" alt="Hootsuite" class="mt-6 rounded-lg shadow">
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-red-500">
+                    <h3 class="text-2xl font-bold mb-6 text-red-700">Gestión de Reputación</h3>
+                    <div class="bg-red-50 p-4 rounded-lg mb-6">
+                        <p class="text-sm font-semibold text-red-800 uppercase mb-2">Protocolo de Crisis:</p>
+                        <p class="text-gray-700 italic">"Escuchar, reconocer el error, actuar con transparencia y ofrecer soluciones reales."</p>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-shield-alt text-red-500 mt-1 mr-3"></i>
+                            <span>Monitoreo de menciones en tiempo real.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-yellow-500 mt-1 mr-3"></i>
+                            <span>Fortalecimiento mediante testimonios verificables.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Métricas de Evaluación -->
+        <section id="metricas" class="mb-20 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-10 text-indigo-700 text-center">Métricas y KPIs (Google Analytics)</h2>
+            <div class="bg-white p-8 rounded-3xl shadow-lg">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <canvas id="kpiChart" width="400" height="300"></canvas>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center p-4 bg-gray-50 rounded-xl">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Engagement Rate</h4>
+                                <p class="text-sm text-gray-500">Meta: 5% mensual</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-gray-50 rounded-xl">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-chart-line text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Conversión de Leads</h4>
+                                <p class="text-sm text-gray-500">Meta: +15% desde redes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center p-4 bg-gray-50 rounded-xl">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Tiempo de Respuesta</h4>
+                                <p class="text-sm text-gray-500">Meta: < 2 horas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <p class="mb-4 text-gray-400">Actividad de Social Media Marketing - 2024</p>
+        <p class="font-bold text-xl">Joan Felipe Aroca Ibarra</p>
+        <p class="text-gray-500">Matrícula: 5200920</p>
+    </footer>
+
+    <script>
+        // Chart.js Configuration
+        const ctx = document.getElementById('kpiChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Alcance', 'Engagement', 'Seguidores', 'Conversión'],
+                datasets: [{
+                    label: 'Proyección de Crecimiento Trimestral (%)',
+                    data: [35, 25, 45, 15],
+                    backgroundColor: [
+                        'rgba(99, 102, 241, 0.7)',
+                        'rgba(139, 92, 246, 0.7)',
+                        'rgba(236, 72, 153, 0.7)',
+                        'rgba(34, 197, 94, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgb(99, 102, 241)',
+                        'rgb(139, 92, 246)',
+                        'rgb(236, 72, 153)',
+                        'rgb(34, 197, 94)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
